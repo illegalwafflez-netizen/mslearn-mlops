@@ -108,14 +108,14 @@ def parse_args():
     parser.add_argument("--training_data", dest='training_data',
                         type=str)
     parser.add_argument("--reg_rate", dest='reg_rate',
-                        type=float, default=0.02)
+                        type=float, default=0.03)
     parser.add_argument("--metrics_output", dest='metrics_output',
                         type=str, default=None)
 
     # parse args
     args = parser.parse_args()
 
-    # return args
+    # return args//
     return args
 
 # run script
