@@ -22,11 +22,8 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Debug secret length (safe)
-        run: |
-          echo "Secret length: ${#AZURE_CREDENTIALS}"
-        env:
-          AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
+      - name: Check az CLI version
+        run: az version
 
       - name: Sign in to Azure
         run: |
